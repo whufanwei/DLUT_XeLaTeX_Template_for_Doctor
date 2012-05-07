@@ -4,8 +4,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 % 
 % 大连理工大学硕士论文 XeLaTeX 模版 —— 宏包配置文件 packages.tex
-% 版本：0.8
-% 最后更新：2012.04.04
+% 版本：0.82
+% 最后更新：2012.05.08
 % 修改者：Yuri (E-mail: yuri_1985@163.com)
 % 修订者：whufanwei(dutfanwei@qq.com) 
 % 编译环境1：Ubuntu 12.04 + TeXLive 2011 + Emacs
@@ -23,7 +23,6 @@
 \usepackage{layouts}                             % 打印当前页面格式的宏包
 \usepackage{paralist}                            % 一种换行不缩进的列表格式，asparaenum,inparaenum 等
 \usepackage[shortlabels]{enumitem}               % 列表格式
-\setlist[enumerate]{(1),itemsep=-5pt,topsep=0mm,labelindent=\parindent,leftmargin=*}
 \usepackage{fancyvrb}                            % 原样输出
 \usepackage[amsmath,thmmarks,hyperref]{ntheorem} % 定理类环境宏包
 \usepackage{type1cm}                             % 控制字体的大小
@@ -34,20 +33,17 @@
 \usepackage{diagbox}    % 斜线表头
 \usepackage{tabularx}   % 表格折行
 \usepackage{siunitx}    % 国际单位，小数点对齐
-\sisetup{inter-unit-product = { }\cdot{ }} 
 
-% 参考文献
 
 % 图形相关
 \usepackage{graphicx}         % 请在引用图片时务必给出后缀名
 \usepackage[x11names]{xcolor} % 支持彩色
 \usepackage[below]{placeins}  % 浮动图形控制宏包
 \usepackage{rotating}	      % 图形和表格的控制
-\usepackage{ccaption}         % 插图表格的双语标题
 \usepackage{picinpar}
 \usepackage{setspace}         % 定制表格和图形的多行标题行距
-\usepackage{subcaption}       %子图
-
+\usepackage{subfigure}           % 插入子图形
+\usepackage[subfigure]{ccaption} % 插图表格的双语标题
 
 \usepackage{listings}         % 源代码展示
 \lstset{%
@@ -81,9 +77,6 @@ CJKbookmarks=true,
 \usepackage[numbers,sort&compress,square,super]{natbib} %参考文献
 \usepackage{hypernat}
 \usepackage{bibentry}
-\addtolength{\bibsep}{-0.5em}              % 缩小参考文献间的垂直间距
-\setlength{\bibhang}{2em}
-\bibpunct{[}{]}{,}{s}{}{}
 
 
 

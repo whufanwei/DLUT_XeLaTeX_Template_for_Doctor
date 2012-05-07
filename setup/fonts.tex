@@ -4,8 +4,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 % 
 % 大连理工大学硕士论文 XeLaTeX 模版 —— 字体配置文件 fonts.tex
-% 版本：0.8
-% 最后更新：2012.04.04
+% 版本：0.82
+% 最后更新：2012.05.08
 % 修改者：Yuri (E-mail: yuri_1985@163.com)
 % 修订者：whufanwei(E-mail: dutfanwei@qq.com) 
 % 编译环境1：Ubuntu 12.04 + TeXLive 2011 + Emacs
@@ -14,14 +14,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 % 英文字体设置特别推荐方案（Windows，需要安装 Adobe 字体），现代
-\usepackage{amssymb}
-\usepackage[no-math]{fontspec}
-\usepackage{amsmath}
+\usepackage{fontspec}
+\usepackage{xltxtra,xunicode}
 \usepackage[CJKnumber,CJKchecksingle,BoldFont]{xeCJK}
-\usepackage{mathspec}
-\setallmainfonts[Mapping=tex-text]{Times New Roman}
-\setallsansfonts[Mapping=tex-text]{Times New Roman}
-\setallmonofonts{Consolas}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setmainfont[Mapping=tex-text]{Times New Roman}
+\setsansfont[Mapping=tex-text]{Arial} 
+\setmonofont{Consolas}
+
 
 % 英文字体设置方案一（Windows，需要安装 LM10 字体），和 LaTeX 默认字体保持一致，经典
 % \usepackage{amssymb}
@@ -72,4 +73,3 @@
 \XeTeXlinebreaklocale "zh"      %中文断行
 \XeTeXlinebreakskip = 0pt plus 1pt %1pt左右弹性间距
 % 其他字体宏包
-\usepackage{xltxtra,xunicode}
